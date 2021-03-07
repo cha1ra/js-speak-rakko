@@ -18,11 +18,11 @@ document.querySelector('#end').addEventListener('click', () => {
 })
 
 recognition.onsoundstart = () => {
-  document.querySelector('#avator').setAttribute('src', '/img/dbk_speak.svg')
+  document.querySelector('#avator').setAttribute('src', './img/dbk_speak.svg')
 }
 
 recognition.onsoundend = () => {
-  document.querySelector('#avator').setAttribute('src', '/img/dbk_close.svg')
+  document.querySelector('#avator').setAttribute('src', './img/dbk_close.svg')
 }
 
 recognition.onend = () => {
