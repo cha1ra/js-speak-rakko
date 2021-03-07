@@ -1,16 +1,28 @@
 const recognition = new webkitSpeechRecognition()
 recognition.lang = 'ja-JP'
 
+
+let isMicrophoneOn = false
+
+document.querySelector('#start').addEventListener('click', () => {
+  recognition.start()
+  isMicrophoneOn = true
+})
+
+document.querySelector('#end').addEventListener('click', () => {
+  isMicrophoneOn = false
+})
+
+
+
 recognition.onsoundstart = () => {
-  console.log('音声開始')
+  document.querySelector('#avator').setAttribute('src', '/img/dbk_speak.svg')
 }
 
 recognition.onsoundend = () => {
-  console.log('音声終了！')
+  document.querySelector('#avator').setAttribute('src', '/img/dbk_close.svg')
 }
 
 recognition.onend = () => {
-  recognition.start()
+  isMicrophoneOn && recognition.start()
 }
-
-recognition.start()
