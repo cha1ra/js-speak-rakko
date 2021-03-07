@@ -2,9 +2,9 @@
 <ellipse class="cls-5" cx="489" cy="541" rx="34" ry="3">
     <animate
         attributeName="ry"
-        dur="1s"
+        dur="0.2s"
+        values="3; 19; 3"
         repeatCount="indefinite"
-        to="19"
     />
 </ellipse>
 </svg>
