@@ -6,16 +6,24 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/style.css">
-  <title>ラッコ口パクシステム</title>
+  <title>ラッコ 口パクSystem</title>
 </head>
 <body>
-  <h1>ラッコ口パクシステム</h1>
   <div class="container">
-    <img id="avator" src="./img/dbk_close.svg" alt="">
-  </div>
-  <div>
-    <button id="start">口パク開始</button>
-    <button id="end">口パク終了</button>
+    <h1 class="title">ラッコ 口パクSystem</h1>
+    <p>ver. 1.0</p>
+    <div class="container__inner">
+      <img id="avator" src="./img/dbk_close.svg" alt="">
+    </div>
+    <div class="actions">
+      <div>
+        <button id="start" class="btn">開始</button>
+        <button id="end" class="btn">終了</button>
+      </div>
+      <div id="status" class="status">
+        音声未認識
+      </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>
